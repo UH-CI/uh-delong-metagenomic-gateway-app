@@ -140,10 +140,9 @@ function goToStorageFolder(dir_path, dir_table,system){
 function getJobListing(system_id){
     $.ajax({
       type: "GET",
-      url: "https://agave.iplantc.org:443/jobs/v2/",
+      url: "https://agave.iplantc.org:443/jobs/v2?appId=uh-delong-metagenome-0.1&executionSystem="+system_id,
       dataType: 'json',
       async: false,
-      data:{execution_system: system_id},
       headers: {
         "Authorization": "Bearer " + getAccessTokenCookie(),
         "Content-Type":"application/x-www-form-urlencoded"
