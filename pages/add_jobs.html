@@ -190,16 +190,16 @@
                                     <form id="job_form" role="form">    
                                         <div class="form-group">
                                             <label>File Result Prefix:</label>
-                                            <input id="job_prefix" class="form-control" placeholder="6">
+                                            <input id="job_prefix" class="form-control" placeholder="MySample">
                                         </div>
                                         <div class="form-group">
                                             <label>Fastq File input 1</label>
-                                            <input id="job_file1" class="form-control" placeholder="agave://sftp.lustre.storage.uhhpc1.its.hawaii.edu/input.fasta">
+                                            <input id="job_file1" class="form-control" placeholder="input.fastq">
                                             <button type="button" id="file_select_button" class="btn btn-default">Select Input File</button>
                                         </div>
                                         <div class="form-group">
                                             <label>Fastq File input 2</label>
-                                            <input id="job_file2" class="form-control" placeholder="agave://sftp.lustre.storage.uhhpc1.its.hawaii.edu/input.fasta">
+                                            <input id="job_file2" class="form-control" placeholder="input.fastq">
                                             <button type="button" id="file_select_button2" class="btn btn-default">Select Input File</button>
                                         </div>
                                          <div class="form-group">
@@ -343,7 +343,7 @@
                       "appId": "uh-delong-metagenome-0.1",
                       "batchQueue": "community.q",
                       "executionSystem": "execute.uhhpc1.its.hawaii.edu",
-                      "maxRunTime": "00:72:00",
+                      "maxRunTime": "72:00:00",
                       "memoryPerNode": "128GB",
                       "nodeCount": "1",
                       "processorsPerNode": "20",
